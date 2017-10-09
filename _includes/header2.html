@@ -1,0 +1,28 @@
+<header class="fixed-top" role="banner">
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Brand -->
+      {% assign default_paths = site.pages | map: "path" %}
+      {% assign page_paths = site.header_pages | default: default_paths %}
+      <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+      <!-- Links -->
+    {% if page_paths %}
+      <div class="collapse navbar-collapse justify-content-end" id="nav-content">   
+         <ul class="navbar-nav nav-link-white">
+          {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+            <li class="nav-item">
+            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+         </ul>
+      </div>
+    {% endif %}
+   </nav>
+</header>
