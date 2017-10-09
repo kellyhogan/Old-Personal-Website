@@ -22,7 +22,7 @@ permalink: /experience/
   * Provide aid to NYU students taking Intro to Computer Science. This course uses Java and the command line
 
 #### Projects:
-* [__Portfolio Website__ (Fall 2017)](https://github.com/kellyhogan/kellyhogan-github.io)
+* [__Portfolio Website__ (Fall 2017)](https://github.com/kellyhogan/kellyhogan.github.io)
   * I built a website using Jekyll for my portfolio
 * [__Edge Detection__, _Python_ (Spring 2017)](https://github.com/kellyhogan/Edge-Detection)
   * Coded an application with Python to detect the edges in an image. A grayscale image was convolved with 4 different Morlet Wavelets. The convolutions were used to create 1 image with the max real values and another with the max imaginary values. These 2 images were then applied to a formula to detect the edges 
