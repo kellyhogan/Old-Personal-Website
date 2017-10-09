@@ -22,6 +22,9 @@ minima:
 #header_pages:
 # - about.html
 
+plugins:
+  - jekyll-seo-tag
+
 #sass:
 #  style: compressed
 
